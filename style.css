@@ -1,0 +1,243 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+html,body {
+   height: 100%;
+   width: 100%;
+   background: linear-gradient(135deg,#00feba,#5b548a);
+   /* font-family: gilroy; */ 
+   /* overflow: hidden; */
+}
+
+.full{
+    padding: 22px 30px;
+    height: 100%;
+    width: 100%;
+    background-color: #111112;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+.full #close{
+    height: 2.5vw;
+    width: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    color: white;
+    border: 1.5px solid white;
+    border-bottom-right-radius: 19px;
+    border-bottom-left-radius: 19px;
+    margin-left: 92%;
+    cursor: pointer;
+}
+.full #close i{
+    margin-left: 5px;
+}
+.full #abt{
+    color: rgba(255, 255, 255, 0.548);
+    margin-left: 60%;
+    margin-top: 12px;
+}
+.full #abt h1{
+    font-size: 110px;
+    font-weight:700;
+    letter-spacing: 20px;
+}
+.full .content{
+    /* background: linear-gradient(135deg,#00feba,#5b548a); */
+    color: rgb(170, 246, 56);
+    height: 30vw;
+    width: 90vw;
+    margin-top: -5%;
+    padding: 0px 30px;
+}
+.full .content p{
+    font-size: 28px;
+}
+.full .content p span{
+    font-size: 60px;
+    font-weight: 500;
+    color: #00feba;
+}
+nav{
+    height: 13vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 22px 55px;
+    font-family: "Poppins", sans-serif;
+}
+
+#left img{
+    height: 16vh;
+}
+#right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#right input {
+    padding: 12px 30px;
+    border-radius: 50px;
+    /* border:2px solid black; */
+    border: none;
+    outline: none;
+    font-size: 17px;
+    background-color: #ffffffc4;
+}
+#right button {
+    padding: 12px 22px;
+    background-color: black;
+    border-radius: 50px;
+    border: none;
+    font-size: 17px;
+    color: white;
+    font-weight: 200;
+    cursor: pointer;
+}
+#right button:hover{
+    background-color: #4d4b4b;
+}
+#right button:active{
+    scale: 0.95;
+}
+.pg1{
+    /* background-color: red; */
+    padding:60px;
+    text-align: center;
+}
+.pg1 #text{
+    width: fit-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 60px;
+    border-radius: 50px;
+    font-family:gilroy;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    animation-name: colorChange;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  @keyframes colorChange {
+    0%{
+      background-color: #ededc1;
+    }
+    
+    20% {
+      background-color: #dbc097;
+    }
+    30%{
+      background-color: #e69e63;
+    }
+   
+    50%{
+      background-color: #dba9d4;
+    }
+    
+    70%{
+        background-color: #7077ef;
+    }
+    80%{
+        background-color: #a6dbef;
+    }
+    
+    100%{
+        background-color: #85cd85;
+    }
+  }
+.pg1 .cards{
+    padding: 30px 0px;
+    /* background-color: beige; */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 5vw;
+}
+.card{
+    margin-top: 22px;
+    height: 17vw;
+    width: 24vw;
+    background-color:#f4f2f2fa ;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid rgb(190, 190, 190);
+    box-shadow: 0px 2px 12px 0px rgb(54, 53, 53);
+}
+.card .top{
+    height: 14vh;
+    background-color:rgb(230, 227, 227);
+    border-bottom: 2px solid rgb(190, 190, 190) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top h4{
+    font-size:20px;
+    font-weight:600;
+    font-family:gilroy;
+}
+.card .top:hover{
+    background-color:royalblue;
+    color: white;
+    border-bottom:2px solid royalblue;
+}
+.card:hover{
+    border:2px solid royalblue ;
+}
+.content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content h1{
+    margin-top: -4vh;
+    font-size: 40px;
+    font-family:"Poppins", sans-serif ;
+    margin-bottom: 3vh;
+}
+.content h4{
+    font-size: 19px;
+    line-height: 18px;
+    font-family:"Poppins", sans-serif ;
+}
+
+.pg2{
+    text-align: center;
+    padding:0px 55px;
+}
+.pg2 .heading{
+    margin: 30px 0px;
+    font-size: 50px;
+    /* -webkit-text-stroke: 1px black */
+    color: white;
+    font-family:gilroy;
+}
+/* Ensure you're applying the correct class to the table */
+table.table {
+    width: 100%;
+    border-collapse: collapse; /* Removes the double borders */
+}
+
+th{
+    padding: 10px;
+    border: 1px solid #ddd; /* Light gray borders around cells */
+    text-align: left;
+    text-transform: uppercase;
+}
+td{
+    text-align: center;
+    border: 1px solid #ddd; 
+}
